@@ -1,0 +1,108 @@
+:root{
+
+}
+
+body{
+font-size: 24px;
+font-family: 'Space Mono', Monospace;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-color:hsl(185, 41%, 84%) ;
+height: 650px;
+}
+
+div.container{    
+    display: flex;
+    flex-direction: row;
+    width: 680px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+}
+
+div.container .info-calc{
+    width: 280px;
+    border: 1px solid red;
+    padding: 0px 20px;
+}
+
+div.container .info-result{
+    background-color: hsl(183, 100%, 15%);
+    width: 280px;
+    height: 90%;
+    border: 1px solid red;
+    padding: 0px 20px;
+    margin: 0px;
+    border-radius: 20px;
+}
+
+.container p.title{
+    font-size: 10px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    padding: 0px;
+}
+
+div.tip-grid{
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-gap: 5px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+input.tip-radio{
+    content: "";
+    background: hsl(183, 100%, 15%);
+    cursor:pointer;
+}
+
+
+input.box-text{
+    width: 260px;
+    position: relative;
+    background-color:hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    margin-bottom: 20px;
+    top: -3px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Space Mono';
+    text-align: right;
+    padding-inline-end: 10px;
+    margin-top: 2px;
+}
+
+input.other-tip{
+    width: 75px;
+    position: relative;
+    background-color:hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Space Mono';
+    text-align: right;
+    padding-inline-end: 10px;
+}
+
+input.other-tip::placeholder{
+    color:hsl(183, 100%, 15%);
+    text-align: center;
+    padding:0px;
+}
+
+input.other-tip::selection{
+    border-color: blue;
+}
