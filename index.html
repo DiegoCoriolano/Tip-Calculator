@@ -14,7 +14,7 @@
 
     <title>Tip Calculator</title>
 </head>
-<body onload="calc()">
+<body>
     <title>
 
     </title>
@@ -23,7 +23,7 @@
         <div class="container">
             <div class="info-calc">
                 <p class="title">Bill</p>
-                <input type="text" name="value" class="box-text" placeholder="$" id="value-box">
+                <input type="text" name="value" class="box-text" placeholder="$" id="value-box" onblur="calc()">
                 <p class="title">Select Tip %</p>
                 <div class="tip-grid">
                     
@@ -50,12 +50,12 @@
                     <label for="tip50" class="label-radio">50%</label>
 
 
-                    <input type="text" name="other-tip" class="other-tip" 
-                    placeholder="Custom" id="custom-tip">
+                    <input type="text" name="tip-select" class="other-tip" 
+                    placeholder="Custom" id="custom-tip" onfocus="customTip()">
 
                 </div>
                 <p class="title">Number of People</p>
-                <input type="text" name="tip-select" class="box-text" id="npeople">
+                <input type="text" name="tip-select" class="box-text" id="npeople" onblur="calc()">
 
             </div>
             <div class="info-result">
