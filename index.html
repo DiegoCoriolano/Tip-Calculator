@@ -14,7 +14,7 @@
 
     <title>Tip Calculator</title>
 </head>
-<body>
+<body onload="calc()">
     <title>
 
     </title>
@@ -23,19 +23,36 @@
         <div class="container">
             <div class="info-calc">
                 <p class="title">Bill</p>
-                <input type="text" name="value" class="box-text" placeholder="$">
+                <input type="text" name="value" class="box-text" placeholder="$" id="value-box">
                 <p class="title">Select Tip %</p>
                 <div class="tip-grid">
-                    <input type="radio" name="tip-select" value="tip05" label="5%" class="tip-radio">
+                    
+                    <input type="radio" name="tip-select" value="tip05" class="tip-radio" id="tip05">
+                    <label for="tip05" class="label-radio">5%</label>
+
                     <input type="radio"
-                    name="tip-select"  value="tip10" label="10%" class="tip-radio">
+                    name="tip-select"  value="tip10" class="tip-radio" id="tip10">
+                    <label for="tip10" class="label-radio">10%</label>
+
+
                     <input type="radio"
-                    name="tip-select"  value="tip15" label="15%" class="tip-radio">
+                    name="tip-select"  value="tip15" class="tip-radio" id="tip15">
+                    <label for="tip15" class="label-radio">15%</label>
+
+
                     <input type="radio"
-                    name="tip-select"  value="tip25" label="25%" class="tip-radio">
+                    name="tip-select"  value="tip25" class="tip-radio" id="tip25">
+                    <label for="tip25" class="label-radio">25%</label>
+
+
                     <input type="radio" 
-                    name="tip-select" value="tip50" label="50%" class="tip-radio">
-                    <input type="text" name="other-tip" class="other-tip" placeholder="Custom">
+                    name="tip-select" value="tip50" class="tip-radio" id="tip50">
+                    <label for="tip50" class="label-radio">50%</label>
+
+
+                    <input type="text" name="other-tip" class="other-tip" 
+                    placeholder="Custom" id="custom-tip">
+
                 </div>
                 <p class="title">Number of People</p>
                 <input type="text" name="tip-select" class="box-text" id="npeople">
@@ -61,12 +78,13 @@
                     </div>
                 </div>
                 <div class="reset">
-                <input type="reset" value="RESET" class="reset">
+                <input type="reset" value="RESET" class="reset" onclick="reset()">
                 </div>
 
             </div>
         </div>
     </main>
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/cc7c7da4e8.js" crossorigin="anonymous"></script>
 </body>
 </html>

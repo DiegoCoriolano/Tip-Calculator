@@ -15,7 +15,7 @@ div.container{
     display: flex;
     flex-direction: row;
     width: 640px;
-    height: 350px;
+    height: 340px;
     background-color: white;
     border-radius: 20px;
     justify-content: space-evenly;
@@ -25,15 +25,13 @@ div.container{
 
 div.container .info-calc{
     width: 280px;
-    border: 1px solid red;
     padding: 0px 30px;
 }
 
 div.container .info-result{
     background-color: hsl(183, 100%, 15%);
     width: 250px;
-    height: 90%;
-    border: 1px solid red;
+    height: 85%;
     padding: 0px 20px;
     margin: 0px 20px;
     border-radius: 20px;
@@ -50,15 +48,40 @@ div.container .info-result{
 div.tip-grid{
     display: grid;
     grid-template-columns: 75px 75px 75px;
-    grid-gap: 5px;
-    justify-content: center;
-    align-content: center;
+    grid-gap: 10px;
     margin-top: 10px;
 }
 
 input.tip-radio{
-    content: "";
-    background: hsl(183, 100%, 15%);
+    display: none;
+    cursor:pointer;
+}
+
+label.label-radio{
+    font-size: 15px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input.tip-radio:hover + label.label-radio{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    cursor:pointer;
+}
+
+
+input.tip-radio:checked + label.label-radio{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
     cursor:pointer;
 }
 
@@ -71,7 +94,6 @@ input.box-text{
     border-radius: 5px;
     height: 2em;
     margin-bottom: 20px;
-    top: -3px;
     font-size: 16px;
     font-weight: 700;
     font-family: 'Space Mono';
@@ -87,7 +109,7 @@ input.box-text::placeholder{
 }
 
 input.other-tip{
-    width: 70px;
+    width: 60px;
     position: relative;
     background-color:hsl(189, 41%, 97%);
     color:hsl(183, 100%, 15%);
@@ -146,7 +168,7 @@ p.tip-result-value{
     font-size: 30px;
 }
 div.reset{
-    margin-top: 90px;
+    margin-top: 28%;
     display: flex;
 
 }
@@ -164,4 +186,5 @@ input.reset{
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+    border:none;
 }
