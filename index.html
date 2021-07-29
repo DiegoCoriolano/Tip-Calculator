@@ -27,35 +27,39 @@
                 <p class="title">Select Tip %</p>
                 <div class="tip-grid">
                     
-                    <input type="radio" name="tip-select" value="tip05" class="tip-radio" id="tip05">
+                    <input type="radio" name="tip-select" value="5%" class="tip-radio" id="tip05">
                     <label for="tip05" class="label-radio">5%</label>
 
                     <input type="radio"
-                    name="tip-select"  value="tip10" class="tip-radio" id="tip10">
+                    name="tip-select"  value="10%" class="tip-radio" id="tip10">
                     <label for="tip10" class="label-radio">10%</label>
 
 
                     <input type="radio"
-                    name="tip-select"  value="tip15" class="tip-radio" id="tip15">
+                    name="tip-select"  value="15%" class="tip-radio" id="tip15">
                     <label for="tip15" class="label-radio">15%</label>
 
 
                     <input type="radio"
-                    name="tip-select"  value="tip25" class="tip-radio" id="tip25">
+                    name="tip-select"  value="25%" class="tip-radio" id="tip25">
                     <label for="tip25" class="label-radio">25%</label>
 
 
                     <input type="radio" 
-                    name="tip-select" value="tip50" class="tip-radio" id="tip50">
+                    name="tip-select" value="50%" class="tip-radio" id="tip50">
                     <label for="tip50" class="label-radio">50%</label>
 
 
                     <input type="text" name="tip-select" class="other-tip" 
-                    placeholder="Custom" id="custom-tip" onfocus="customTip()">
+                    placeholder="Custom" id="custom-tip" onfocus="customTip()" onblur="calc()">
 
                 </div>
-                <p class="title">Number of People</p>
-                <input type="text" name="tip-select" class="box-text" id="npeople" onblur="calc()">
+                <div class="label-npeople">
+                    <p class="title">Number of People</p>
+                    <p class="cantZero">Can't be zero!</p>
+                </div>
+                    <input type="number" name="tip-select" class="box-text" id="npeople" onblur="calc()">
+                
 
             </div>
             <div class="info-result">
@@ -75,6 +79,15 @@
                     </div>
                     <div class="tip-result">
                         <p class="tip-result-value" id="tip-total-value">$0,00</p>
+                    </div>
+                </div>
+                <div class="results">
+                    <div class="tip-amount">
+                        <p class="tipamount-person">Tip Amount</p>
+            
+                    </div>
+                    <div class="tip-result">
+                        <p class="tip-result-value" id="tip-total">$0,00</p>
                     </div>
                 </div>
                 <div class="reset">
