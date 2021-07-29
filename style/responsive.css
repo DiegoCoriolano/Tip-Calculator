@@ -1,16 +1,95 @@
-@media screen and (max-width:400px) {
+@media screen and (max-width:400px){
 
+       
     div.container{
         font-family: 'Space Mono', Monospace;
         display: flex;
-        flex-direction: column;
-        width: 640px;
-        height: 340px;
-        background-color: white;
-        border-radius: 20px;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-color: white !important;
+        border-radius: 20px 20px 0px 0px !important;
         justify-content: space-evenly;
         align-items: center;
         padding: 0px;
+        margin:0px;
+    }
+
+    div.container .info-calc{
+        width: 280px;
+        padding: 0px 0px;
+        margin:0px 20px !important;
+        margin-top: 10px !important;
     }
     
+    div.container .info-result{
+        background-color: hsl(183, 100%, 15%);
+        width: 250px;
+        height: 85%;
+        margin: 0px 20px !important;
+        border-radius: 20px;
+        margin-bottom: 20px !important;
+    
+    }
+
+    main .logo{
+        margin-top: 50% !important;
+        margin-bottom: 30px !important;
+    }
+    
+    div.reset{
+        margin-bottom: 10%;
+        display: flex;
+    }
+
+    div.tip-grid{
+        display: grid;
+        justify-content: center !important;
+        align-items: center !important;
+        align-content: center !important;
+        grid-template-columns: 50% 50% !important;
+        grid-template-rows: 40px 40px 40px;
+        grid-gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    label.label-radio{
+        font-size: 18px !important;
+        background-color: hsl(183, 100%, 15%);
+        color: hsl(185, 41%, 84%);
+        font-family: 'Space Mono', monospace;
+        font-weight: 600;
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input.box-text{
+        width: 96% !important;
+    }
+
+    input.other-tip{
+        width: 90% !important;
+        position:unset !important;
+        display: flex !important;
+        align-content: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0px !important;
+        height: 100% !important;
+        ;
+    }
+
+    input.other-tip::placeholder{
+        color:hsl(183, 100%, 15%);
+        font-size: 18px !important;
+        text-align: center !important;
+        padding:0px;
+    }
+
 }
