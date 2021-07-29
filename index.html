@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/favicon-32x32.png" type="image/x-icon">
+        
+    <!--Responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
     <!--Style CSS-->
     <link rel="stylesheet" href="style/style.css">
 
@@ -26,31 +32,31 @@
         <div class="container">
             <div class="info-calc">
                 <p class="title">Bill</p>
-                <input type="text" name="value" class="box-text" id="value-box" onblur="calc()">
+                <input type="text" name="value" class="box-text" id="value-box" onblur="calc()" placeholder="0">
                 <p class="title">Select Tip %</p>
                 <div class="tip-grid">
                     
                     <input type="radio" name="tip-select" value="5%" class="tip-radio" id="tip05">
-                    <label for="tip05" class="label-radio">5%</label>
+                    <label for="tip05" class="label-radio" onclick="resetButton()">5%</label>
 
                     <input type="radio"
                     name="tip-select"  value="10%" class="tip-radio" id="tip10">
-                    <label for="tip10" class="label-radio">10%</label>
+                    <label for="tip10" class="label-radio" onclick="resetButton()">10%</label>
 
 
                     <input type="radio"
                     name="tip-select"  value="15%" class="tip-radio" id="tip15">
-                    <label for="tip15" class="label-radio">15%</label>
+                    <label for="tip15" class="label-radio" onclick="resetButton()">15%</label>
 
 
                     <input type="radio"
                     name="tip-select"  value="25%" class="tip-radio" id="tip25">
-                    <label for="tip25" class="label-radio">25%</label>
+                    <label for="tip25" class="label-radio" onclick="resetButton()">25%</label>
 
 
                     <input type="radio" 
                     name="tip-select" value="50%" class="tip-radio" id="tip50">
-                    <label for="tip50" class="label-radio">50%</label>
+                    <label for="tip50" class="label-radio" onclick="resetButton()">50%</label>
 
 
                     <input type="text" name="tip-select" class="other-tip" 
@@ -61,7 +67,7 @@
                     <p class="title">Number of People</p>
                     <p class="cantZero" id="cantZero">Can't be zero!</p>
                 </div>
-                    <input type="number" name="tip-select" class="box-text" id="npeople" onblur="calc()">
+                    <input type="number" class="box-text" id="npeople" onblur="calc()" placeholder="0">
                 
 
             </div>
@@ -94,7 +100,7 @@
                     </div>
                 </div>
                 <div class="reset">
-                <input type="reset" value="RESET" class="reset" onclick="reset()">
+                <input type="reset" value="RESET" class="reset" id="reset" onclick="reset()">
                 </div>
 
             </div>

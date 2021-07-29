@@ -39,7 +39,10 @@ div.container{
 
 div.container .info-calc{
     width: 280px;
-    padding: 0px 30px;
+    padding: 0px 0px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-right: 0px;
 }
 
 div.container .info-result{
@@ -48,6 +51,7 @@ div.container .info-result{
     height: 85%;
     padding: 0px 20px;
     margin: 0px 20px;
+    margin-left: 0px;
     border-radius: 20px;
 
 }
@@ -119,15 +123,18 @@ input.box-text{
 
 input#value-box{
     background:  url("../imgs/icon-dollar.svg") no-repeat center left, hsl(189, 41%, 97%);
+    background-position-x: 10px;
 
 }
 
 input#npeople{
     background:  url("../imgs/icon-person.svg") no-repeat center left, hsl(189, 41%, 97%);
+    background-position-x: 10px;
+
 }
 
 input.box-text::placeholder{
-    text-align: left;
+    text-align: right;
     color:hsl(185, 41%, 84%);
 }
 
@@ -149,7 +156,7 @@ input.other-tip{
 
 input.other-tip::placeholder{
     color:hsl(183, 100%, 15%);
-    text-align: center;
+    text-align: right;
     padding:0px;
 }
 
@@ -228,4 +235,10 @@ input.reset{
     font-weight: bold;
     cursor: pointer;
     border:none;
+}
+
+input.reset:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    cursor:pointer;
 }
