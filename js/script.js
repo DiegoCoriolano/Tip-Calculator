@@ -5,10 +5,21 @@ function calc(){
     var tip = document.getElementsByName("tip-select");
 
     var tipBox = document.getElementById("custom-tip").value;
-    if (npeople==0){
-        
+
+    if (npeople=="0"){
+        document.getElementById("cantZero").style.display="initial";
+
+        document.getElementById("tip-amount-value").innerText = "$0,00";
+
+        document.getElementById("tip-total-value").innerText = "$0,00";
+
+        document.getElementById("tip-total").innerText = "$0,00";
+
+    } else{
+        document.getElementById("cantZero").style.display="none";5  
     }
-    if (bill!="" && npeople!="" && tipBox!=""){
+    
+    if (bill!="" && npeople>"0" && tipBox!=""){
 
         var tip05 = document.getElementById("tip05");
         tip05.checked=false;

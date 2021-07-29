@@ -17,6 +17,13 @@ background-color:hsl(185, 41%, 84%) ;
 height: 650px;
 }
 
+main .logo{
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
 div.container{
     font-family: 'Space Mono', Monospace;
     display: flex;
@@ -110,6 +117,15 @@ input.box-text{
     outline-color: hsl(172, 67%, 45%);
 }
 
+input#value-box{
+    background:  url("../imgs/icon-dollar.svg") no-repeat center left, hsl(189, 41%, 97%);
+
+}
+
+input#npeople{
+    background:  url("../imgs/icon-person.svg") no-repeat center left, hsl(189, 41%, 97%);
+}
+
 input.box-text::placeholder{
     text-align: left;
     color:hsl(185, 41%, 84%);
@@ -147,9 +163,10 @@ p.cantZero{
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     color: red;
-    display: none ;
+    display:none ;
     margin-bottom: 0px;
     padding:0px;
+    transition: 0.7;
 }
 
 div.label-npeople{

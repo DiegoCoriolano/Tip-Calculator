@@ -20,10 +20,13 @@
     </title>
     
     <main>
+
+        <img src="imgs/logo.svg" alt="logo" class="logo">
+
         <div class="container">
             <div class="info-calc">
                 <p class="title">Bill</p>
-                <input type="text" name="value" class="box-text" placeholder="$" id="value-box" onblur="calc()">
+                <input type="text" name="value" class="box-text" id="value-box" onblur="calc()">
                 <p class="title">Select Tip %</p>
                 <div class="tip-grid">
                     
@@ -56,7 +59,7 @@
                 </div>
                 <div class="label-npeople">
                     <p class="title">Number of People</p>
-                    <p class="cantZero">Can't be zero!</p>
+                    <p class="cantZero" id="cantZero">Can't be zero!</p>
                 </div>
                     <input type="number" name="tip-select" class="box-text" id="npeople" onblur="calc()">
                 
